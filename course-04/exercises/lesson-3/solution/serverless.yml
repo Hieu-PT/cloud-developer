@@ -1,5 +1,4 @@
-service:
-  name: serverless-udagram-app
+service: serverless-udagram-app
 
 plugins:
   - serverless-webpack
@@ -87,7 +86,7 @@ functions:
     events:
       - http:
           method: post
-          path: groups/{groupId}/images
+          path: groups/{groupId}/image
           cors: true
           reqValidatorName: RequestBodyValidator
           documentation:
